@@ -118,8 +118,6 @@ http://127.0.0.1:5000
 * No dynamic/sandbox execution
 * No macro or encrypted PDF analysis
 
-> These limitations are **intentional** and documented as part of the threat model.
-
 ---
 
 
@@ -129,7 +127,7 @@ http://127.0.0.1:5000
 * Rate limiting & abuse prevention
 * Hash-based reputation checks
 * PDF macro analysis
-* Sandbox execution (advanced)
+* Or if any enhancements feel free to reach out...
 
 ---
 
@@ -141,4 +139,4 @@ This project is for **educational and defensive security purposes only**. No rea
 
 ## ⭐ If you found this useful
 
-Give this repo a ⭐ and feel free to fork or contribute!
+Give this repo a ⭐ and feel free to fork or contribute!!
