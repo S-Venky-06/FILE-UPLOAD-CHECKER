@@ -1,0 +1,23 @@
+2026-01-02 18:34:34,801 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.16:5000
+2026-01-02 18:34:34,801 | INFO | [33mPress CTRL+C to quit[0m
+2026-01-02 18:34:34,804 | INFO |  * Restarting with stat
+2026-01-02 18:34:35,294 | WARNING |  * Debugger is active!
+2026-01-02 18:34:35,298 | INFO |  * Debugger PIN: 844-480-199
+2026-01-02 18:34:46,042 | INFO | 127.0.0.1 - - [02/Jan/2026 18:34:46] "GET / HTTP/1.1" 200 -
+2026-01-02 18:35:03,424 | INFO | ALLOWED | IP=127.0.0.1 | filename=real.pdf | stored=60152187-b40b-4b37-9b96-5c2c6888713d_real.pdf | mime=application/pdf
+2026-01-02 18:35:03,425 | INFO | 127.0.0.1 - - [02/Jan/2026 18:35:03] "POST /upload HTTP/1.1" 200 -
+2026-01-02 18:35:12,713 | INFO | ALLOWED | IP=127.0.0.1 | filename=test.txt | stored=a1bc109a-1b34-45d3-8c35-54a765b78476_test.txt | mime=text/plain
+2026-01-02 18:35:12,714 | INFO | 127.0.0.1 - - [02/Jan/2026 18:35:12] "POST /upload HTTP/1.1" 200 -
+2026-01-02 18:35:28,306 | WARNING | BLOCKED | IP=127.0.0.1 | filename=fake.pdf | stored=0f931bd8-9414-4a5d-bbff-e2d831ffebe1_fake.pdf | detected_mime=text/x-shellscript | expected=['application/pdf'] | reason=mime_mismatch
+2026-01-02 18:35:28,307 | INFO | 127.0.0.1 - - [02/Jan/2026 18:35:28] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2026-01-02 18:35:33,753 | WARNING | BLOCKED | IP=127.0.0.1 | filename=fake2.pdf | stored=3cff46b6-cff1-463b-a58f-5991aee902ca_fake2.pdf | detected_mime=application/x-pie-executable | expected=['application/pdf'] | reason=mime_mismatch
+2026-01-02 18:35:33,754 | INFO | 127.0.0.1 - - [02/Jan/2026 18:35:33] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2026-01-02 18:35:40,515 | WARNING | BLOCKED | IP=127.0.0.1 | filename=malware.txt | stored=bdbdf180-0423-4d41-a77c-3479ee11cf97_malware.txt | detected_mime=text/x-shellscript | expected=['text/plain'] | reason=mime_mismatch
+2026-01-02 18:35:40,516 | INFO | 127.0.0.1 - - [02/Jan/2026 18:35:40] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2026-01-02 18:35:46,111 | ERROR | BLOCKED | IP=127.0.0.1 | filename=eicar.txt | stored=b3585b1c-6a45-4b74-b03b-26c0bd31b0c7_eicar.txt | yara_rules=['EICAR_Test_File']
+2026-01-02 18:35:46,112 | INFO | 127.0.0.1 - - [02/Jan/2026 18:35:46] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
+2026-01-02 18:35:52,787 | WARNING | BLOCKED | IP=127.0.0.1 | filename=bad.exe | reason=extension_not_allowed
+2026-01-02 18:35:52,788 | INFO | 127.0.0.1 - - [02/Jan/2026 18:35:52] "[31m[1mPOST /upload HTTP/1.1[0m" 400 -
