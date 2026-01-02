@@ -64,6 +64,7 @@ malicious-file-upload-detector/
 git clone https://github.com/yourusername/malicious-file-upload-detector.git
 cd malicious-file-upload-detector
 ```
+### 📢 You can skip step 2 on windows but on linux you need an virtual environment 
 
 ### 2️⃣ Create Virtual Environment
 
